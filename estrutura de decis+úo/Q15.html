@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+   alert("Pronto para achar um triangulo???");
+        let ladoA = parseFloat(prompt("digite o primeiro lado do triângulo"));
+        let ladoB = parseFloat(prompt("digite o segundo lado do triângulo"));
+        let ladoC = parseFloat(prompt("digite o terceiro lado do triângulo"));
+        if (ladoA + ladoB > ladoC) {
+            if (ladoA == ladoB && ladoA == ladoC) {
+                alert("Triângulo Equilátero");
+            } else if (ladoA == ladoB || ladoB == ladoC || ladoC == ladoA) {
+                alert("Triângulo Isóceles");
+            } else if (ladoA != ladoB && ladoC) {
+                alert("Triângulo Escaleno")
+            }
+        } else {
+            alert("Não é um triângulo");
+        }
+            
+    
+    </script>
+</body>
+</html>

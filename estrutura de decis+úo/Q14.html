@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<title></title>
+	<meta charset="utf-8">
 </head>
 <body>
 	<script type="text/javascript">
 		
 		let nota1 = parseFloat(prompt('Informe sua primeira nota parcial:'));
 		let nota2 = parseFloat(prompt('Informe sua segunda nota parcial:'));
-		let media = 2/(nota1 + nota2);
+		let media = (nota1 + nota2) / 2;
+        
+        if (media >= 9.0 && media <= 10.0) {
+            alert("Nota 1 => " + nota1 + "\nNota 2 => " + nota2 + "\nMédia => " + media + "\nConceito => A\nVocê foi Aprovado");
+        } else if (media >= 7.5 && media <= 9.0) {
+            alert("Nota 1 => " + nota1 + "\nNota 2 => " + nota2 + "\nMédia => " + media + "\nConceito => B\nVocê foi Aprovado");
+        } else if (media >= 6.0 && media <= 7.5) {
+            alert("Nota 1 => " + nota1 + "\nNota 2 => " + nota2 + "\nMédia => " + media + "\nConceito => C\nVocê foi Aprovado");
+        } else if (media >= 4.0 && media <= 6.0) {
+            alert("Nota 1 => " + nota1 + "\nNota 2 => " + nota2 + "\nMédia => " + media + "\nConceito => D\nVocê foi Reprovado");
+        } else if (media >= 0.0 && media <= 4.0) {
+            alert("Nota 1 => " + nota1 + "\nNota 2 => " + nota2 + "\nMédia => " + media + "\nConceito => F\nVocê foi Reprovado");
+        } else {
+            alert("Valores Inválidos!");
+        } 
 
-		if (media >= 9) {
-			alert();
-		} else if (media >= 7.5) {
-
-		} else if (media >= 6) {
-
-		} else if (media >= 4) {
-
-		} else if (media >= 0) {
-
-		} else {
-
-		}
-
+		
 
 
 
