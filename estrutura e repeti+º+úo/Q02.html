@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EstruturasDeRepetição - Q02</title>
+</head>
+<body>
+    <script type="text/javascript">
+    
+       login = prompt("Digite seu nome de usuário:"); 
+       senha = prompt("Digite sua senha:"); 
+        /*for (i = 1; i <= 10; i++) {
+          if (senha == login) {
+          alert("O seu login deve ser diferente da senha!");
+            login = prompt("Digite seu nome de usuário:"); 
+       senha = prompt("Digite sua senha:");} else {
+        alert("Tudo OK!")
+        break;
+       }
+        }*/
+
+        
+        
+        while (login == senha) {
+            alert("O seu login deve ser diferente da senha!");
+            login = prompt("Digite seu nome de usuário:"); 
+       senha = prompt("Digite sua senha:");
+        }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EstruturasDeRepetição - Q03</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        /*
+
+
+
+        let solteiro = "s";
+        let casado = "c";
+        let viuvo = "v";
+        let divorciado = "d";
+        let masculino ="m";
+        let feminino ="f";
+        let nome = prompt("Informe seu nome:");
+        for (i = 0; i < 10; i++) {
+            if (nome.length <= 3) {
+                alert("Nome inváido!");
+                nome = prompt("Digite o seu nome:");
+            }  
+        }
+
+
+
+        let idade = prompt("Informe sua idade:");
+        for (i = 0; i < 10; i++) {
+            if (idade > 150) {
+                alert("Idade inválida");
+                idade = prompt("Digite sua idade:");
+            }
+        }
+
+
+
+        let sexo = prompt("Digite seu sexo: \n m para masculino \nf para feminino");
+        sexo = sexo.toLowerCase();
+        for (i = 0; i < 10; i++) {
+            if (sexo != masculino && sexo != feminino) {
+                alert("sexo inválido");
+                sexo = prompt("Digite seu sexo: \n m para masculino \nf para feminino");
+            }
+
+
+        }
+        let salario = prompt("Informe seu salário:");
+        for (i = 0; i < 10; i++) {
+            if (salario <= 0) {
+                alert("Valor inválido!:");
+                salario = prompt("Digite quanto você ganha:");
+            }
+
+        }
+        let estadoCivil = prompt("Informe seu estadoCivil:");
+        estadoCivil = estadoCivil.toLowerCase();
+        for (i = 0; i < 10; i++) {
+            if (estadoCivil != solteiro && estadoCivil != casado && estadoCivil != viuvo && estadoCivil != divorciado) {
+                alert("Digite o seu estado civil:");
+                estadoCivil = prompt("Digite o seu estado civil:");
+            }
+
+        }
+
+        */
+        
+
+        nome = prompt("Digite o seu nome:");
+        while (nome.length < 3) {
+            alert("Nome inváido!");
+            nome = prompt("Digite o seu nome:");
+        }
+        idade = prompt("Digite sua idade:");
+        while (idade > 120) {
+            alert("Idade inválida");
+            idade = prompt("Digite sua idade:");
+        }
+        salario = prompt("Digite quanto você ganha:");
+        while (salario < 0) {
+            alert("Valor inválido!:");
+            salario = prompt("Digite quanto você ganha:");
+        } 
+        sexo = prompt("Digite seu sexo: \n m para masculino \nf para feminino");
+        masculino ="m";
+        feminino ="f";
+        while (sexo != masculino && sexo != feminino) {
+            alert("sexo inválido");
+            sexo = prompt("Digite seu sexo: \n m para masculino \nf para feminino");
+        }
+        estadoCivil = prompt("Digite o seu estado civil:");
+        solteiro = "s";
+        casado = "c";
+        viuvo = "v";
+        divorciado = "d";
+        while (estadoCivil != solteiro && estadoCivil != casado && estadoCivil != viuvo && estadoCivil != divorciado) {
+            alert("Digite o seu estado civil:");
+            estadoCivil = prompt("Digite o seu estado civil:");
+        }
+    
+    </script>
+</body>
+</html>

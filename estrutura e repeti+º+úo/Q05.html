@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EstruturasDeRepetição - Q05</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+       /* let paisA = parseFloat(prompt("Informe a população do Pais A:"));
+        let paisB = parseFloat(prompt("Informe a população do Pais B:"));
+        let taxPaisA = parseFloat(prompt("Informe a taxa de crescimento poulacional do Pais A:"));
+        let taxPaisB = parseFloat(prompt("Informe a taxa de crescimento poulacional do Pais B:"));
+        let quantidadeTempo = 0;
+
+        for (let i = 0; paisA < paisB; i++) {
+                paisA >= paisB;   
+                paisA = paisA * (taxPaisA/100);
+                paisB = paisB * (taxPaisB/100);
+                quantidadeTempo = i;
+        }
+    alert("A poulação do pais A ultrapassará a população do pais B em: " + quantidadeTempo + " anos");
+    */
+
+    paisA = parseFloat(prompt("Informe a população do pais A:"));
+        taxPaisA = parseFloat(prompt("Informe a taxa de crescimento populacional do pais A:"));
+        paisB = parseFloat(prompt("Informe a população do pais B:"));
+        taxPaisB = parseFloat(prompt("Informe a taxa de crescimento populacional do pais B:"));
+        anos = 0
+        while (paisA <= paisB) {
+            paisA = paisA * (taxPaisA/100);
+            paisB = paisB * (taxPaisB/100);
+            anos = anos + 1;
+        }
+        alert("A população do pais A ultrapassará a população do pais B em: " + anos + " Anos");
+    </script>
+</body>
+</html>

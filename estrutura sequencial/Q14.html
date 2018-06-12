@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura Sequencial - Questão 14</title>
+</head>
+<body>
+    <script>
+        
+       let peso = parseFloat(prompt('Informe o peso'));
+        const liiteDePeso = 50;
+        let excedente = peso - liiteDePeso;
+        let multa = excedente * 4;
+        if(peso > liiteDePeso) {
+            alert('Você ultrapassou ' + excedente + 'kg do peso permitido');
+            alert('Sua multa é de: ' + multa + 'R$');
+        } else {
+            alert(peso + 'kg você NÃO excedeu o peso permitido');
+            alert('Você NÃO pagará multa');
+        }
+        
+        
+        
+    
+    </script>
+</body>
+</html>

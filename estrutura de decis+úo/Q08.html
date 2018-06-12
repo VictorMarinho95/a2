@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        let produto1 = parseFloat(prompt("Informe o valor do produto um:"));
+        let produto2 = parseFloat(prompt("Informe o valor do produto dois:"));
+        let produto3 = parseFloat(prompt("Informe o valor do produto três:"));
+        if (produto1 > produto2 && produto2 > produto3) {
+            alert("O produto três é mais barato, compre-o!");
+        } else if (produto1 > produto3 && produto3 > produto2) {
+            alert("O produto dois é mais barato, compre-o!");
+        } else if (produto2 > produto1 && produto1 > produto3) {
+            alert("O produto três é mais barato, compre-o!");
+        } else if (produto2 > produto3 && produto3 > produto1) {
+            alert("O produto um é mais barato, compre-o!");
+        } else if (produto3 > produto1 && produto1 > produto2) {
+            alert("O produto dois é mais barato, compre-o!");
+        } else if (produto3 > produto2 && produto2 > produto1) {
+            alert("O produto um é mais barato, compre-o!");
+        }
+        
+    
+    </script>
+</body>
+</html>

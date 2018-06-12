@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura Sequencial - Questão 15</title>
+</head>
+<body>
+    <script>
+        
+       
+        
+        let ganhoHora = parseFloat(prompt('Quanto você ganha por hora?'));
+        let horasTrabalhadas = parseFloat(prompt('Quantas horas você trabalhou este mês?'));
+        let salarioBruto = ganhoHora * horasTrabalhadas;
+        let impostoDeRenda = 0.11 * salarioBruto;
+        let inss = 0.08 * salarioBruto;
+        let sindicato = 0.05 * salarioBruto
+        let salarioLiquido = salarioBruto - impostoDeRenda - inss - sindicato;
+        
+        alert('Seu salário bruto é: ' + salarioBruto + 'R$');
+        alert('Desconto do imposto de renda: ' + impostoDeRenda + 'R$');
+        alert('Desconto do INSS: ' + inss + 'R$');
+        alert('Desconto do sindicato: ' + sindicato + 'R$');
+        alert('Seu salário liquido é: ' + salarioLiquido + 'R$');
+        
+        
+    
+    </script>
+</body>
+</html>
