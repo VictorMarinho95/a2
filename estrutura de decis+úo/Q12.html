@@ -7,9 +7,39 @@
 <body>
     <script>
     
+        let valorHora = parseFloat(prompt('Informe quanto você ganha por hora:'));
+        let horasTrab = parseFloat(prompt('Informe quantas horas foram trabalhadas este mês:'));
+        salarioBruto = valorHora * horasTrab;
+        imRenda = "0"
+        sindicato = salarioBruto * 0.03;
+        inss = salarioBruto * 0.1;
+        descontos = sindicato + inss + imRenda;
+        salarioLiquido = salarioBruto - descontos;
+        fgts = salarioBruto * 0.11;
+        if (salarioBruto >= 900) {
+        	let imRenda = '0';
+        	alert('Salário Bruto = ' + salarioBruto + ' R$\nINSS (10%) = ' + inss + ' R$\nImposto de renda = ' + imRenda + ' R$\n' + 'FGTS (11%) = ' + fgts + ' R$\n' + 'Total de descontos = ' + descontos + ' R$\n' + 'Salário liquido = ' + salarioLiquido + ' R$\n');
+        } else if (salarioBruto > 900 && salarioBruto <= 1500) {
+        	let imRenda = salarioBruto * 0.05;
+        	alert('Salário Bruto = ' + salarioBruto + ' R$\nINSS (10%) = ' + inss + ' R$\nImposto de renda = ' + imRenda + ' R$\n' + 'FGTS (11%) = ' + fgts + ' R$\n' + 'Total de descontos = ' + descontos + ' R$\n' + 'Salário liquido = ' + salarioLiquido + ' R$\n');
+        } else if (salarioBruto > 1500 && salarioBruto <= 2500) {
+        	let imRenda = salarioBruto * 0.1;
+        	alert('Salário Bruto = ' + salarioBruto + ' R$\nINSS (10%) = ' + inss + ' R$\nImposto de renda = ' + imRenda + ' R$\n' + 'FGTS (11%) = ' + fgts + ' R$\n' + 'Total de descontos = ' + descontos + ' R$\n' + 'Salário liquido = ' + salarioLiquido + ' R$\n');
+        } else {
+        	let imRenda = salarioBruto * 0.2;
+        	alert('Salário Bruto = ' + salarioBruto + ' R$\nINSS (10%) = ' + inss + ' R$\nImposto de renda = ' + imRenda + ' R$\n' + 'FGTS (11%) = ' + fgts + ' R$\n' + 'Total de descontos = ' + descontos + ' R$\n' + 'Salário liquido = ' + salarioLiquido + ' R$\n');
+        }
         
+        	
+
         
-    
+    /*'Salário Bruto = ' + salarioLiquido + 'R$\n' +
+        	'INSS = ' + inss + 'R$\n' +
+        	'IR = ' + imRenda + 'R$\n' +
+        	'FGTS = ' + fgts + 'R$\n' +
+        	'Total de descontos = ' + descontos + 'R$\n' +
+        	'Salário liquido = ' + salarioLiquido + 'R$\n' +*/
+         
     </script>
 </body>
 </html>
