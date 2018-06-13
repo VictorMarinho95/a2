@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let caracteres = new Array(10);
+		let consoantes = [];
+
+		for (let i = 0; i < caracteres.length; i++) {
+			caracteres[i] + prompt("Digite a letra;");
+			switch (caracteres) {
+				case "a": case "e": case "i": case "o": case "u":
+				break;
+				default:
+				if(isNaN(caracteres[i])) {
+					break;
+				} else {
+					consoantes[i] = consoantes[j];
+					j++;
+				}
+			}
+		}
+		alert(consoantes.join(", "));
+
+
+
+
+	</script>
+</body>
+</html>
