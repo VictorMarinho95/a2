@@ -1,0 +1,9 @@
+listas
+pilhas
+filas
+lista ligada
+______________________________
+
+adição
+busca
+remoção

@@ -7,7 +7,7 @@
 <body>
     <script>
         
-        let numeros = [];
+        /*let numeros = [];
         let pares = [];
         let impares = [];
         
@@ -20,10 +20,31 @@
                 impares.push(numeros[i]);
             }
         }
-        alert("Numeros: " + numeros.join(", ") + "\nPares: " + pares.join(", ") + "\nImpares: " + impares.join(", "));
+        alert("Numeros: " + numeros.join(", ") + "\nPares: " + pares.join(", ") + "\nImpares: " + impares.join(", "));*/
         
         
-    
+        let numeros = new Array(10);
+        let pares = [];
+        let impares = [];
+
+
+        let index_par = 0;
+        let index_impar = 0;
+
+
+        for (let i = 0; i < numeros.length; i++) {
+            numeros[i] = parseInt(prompt("Número" + i));
+            let resto = numeros[i] % 2;
+            if (resto == 0) {
+                pares[index_par] = numeros[i];
+                index_par++;
+            } else {
+                impares[index_impar] = numeros[i];
+                index_impar++;
+            }
+        }
+
+        alert("Numeros: " + numeros.join(", ") + "\nPares: " + pares.join(", ") + "\nImpares: " + impares.join(", "))
     
     
     
