@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        let a = parseFloat(prompt("Insira o valor de 'a':"));
+        	if (a == 0) {
+        		alert("Essa equação não é do segundo grau");
+        	} else {
+        		let b = parseFloat(prompt("Insira o valor de 'b':"));
+        		let c = parseFloat(prompt("Insira o valor de 'c':"));
+
+        		let delta = (b*b) - 4*a*c
+        		if (delta == 0) {
+        		alert("esta equação possui apenas uma raiz");
+        		} else if (delta < 0) {
+        		alert("esta equação não possui raizes reais");
+        		} else if (delta > 0) {
+        		alert("esta equação possui duas raizes reais e distintas");
+        		}
+        	}
+    
+    
+    </script>
+</body>
+</html>

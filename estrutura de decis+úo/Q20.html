@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let nota1 = parseFloat(prompt("Informe sua primeira nota:"));
+        let nota2 = parseFloat(prompt("Informe sua segunda nota:"));
+        let nota3 = parseFloat(prompt("Informe sua terceira nota:"));
+        let media = (nota1+nota2+nota3)/3
+        
+        if (media < 7) {
+            alert("Você foi REPROVADO");
+        } else if (media >= 7 && media < 10) {
+            alert("Você foi APROVADO");
+        } else if (media == 10) {
+            alert("Você foi APROVADO COM DISTINÇÃO");
+        }
+    
+    
+    </script>
+</body>
+</html>
