@@ -9,11 +9,24 @@
     
         let valor = parseInt(prompt("Informe a quantia que você pretende sacar:"));
         
+        
         while (valor <= 600 && valor >= 10) {
+            let qtdnotas100 = parseInt(valor/100);
+            let resto100 = parseInt(valor%100);
+            let qtdnotas50 = parseInt(resto100/50);
+            let resto50 = parseInt(resto100%50);
+            let qtdnotas20 = parseInt(resto50/20);
+            let resto20 = parseInt(resto50%20);
+            let qtdnotas10 = parseInt(resto20/10);
+            let resto10 = parseInt(resto20%10);
+            let qtdnotas5 = parseInt(resto10/5);
+            let resto5 = parseInt(resto10%5);
+            let qtdnotas1 = parseInt(resto5/1);
+            let resto1 = parseInt(resto5%1);
             
             
-            
-            
+            alert("Para sacar " + valor + " R$, o prgrama fornece:\n" + qtdnotas100 + " Notas de 100\n" + qtdnotas50 + " Notas de 50\n" + qtdnotas20 + " Notas de 20\n" + qtdnotas10 + " Notas de 10\n" + qtdnotas5 + " Notas de 5\n" + qtdnotas1 + " Notas de 1");
+            break;
         }
         
     

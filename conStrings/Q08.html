@@ -6,8 +6,7 @@
 <body>
 	<script type="text/javascript">
 	
-		let frase = prompt('Digite uma frase:').toLowerCase();
-		let frase += frase.trim();
+		let frase = prompt('Digite uma frase:').toLowerCase().replace(' ', '');
 		alert(frase);
 	</script>
 </body>
