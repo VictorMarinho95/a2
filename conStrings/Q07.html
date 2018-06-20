@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let frase = prompt('Digite uma frase:')
+		let vogais = 0;
+		let espacos = 0;
+		for (let i = 0; i < frase.length; i++) {
+			let code = frase.toLowerCase().charCodeAt(i);
+			if (code == 32) {
+				espacos++;
+			} else if (code == 97 || code == 101 || code == 105 || code ==111 || code == 107) {
+				vogais++;
+			}
+		}
+
+		alert('A frase possui:\nEspaços: ' + espacos + '\nVogais: ' + vogais);
+
+
+
+
+
+	</script>
+</body>
+</html>

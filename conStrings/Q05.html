@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let nome = prompt("Digite seu nome").toUpperCase();
+		let piramideInvertida = ""
+
+		for (i = nome.length; i > 0 ; i--) {
+			piramideInvertida += nome.substr(0, i) + "\n";
+		}
+
+		alert(piramideInvertida);
+
+	</script>
+</body>
+</html>
