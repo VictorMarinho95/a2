@@ -6,14 +6,13 @@
 <body>
 	<script type="text/javascript">
 		
-		let nome = prompt("Digite seu nome:");
-		let nomeVertical = ""
+		let numero = parseFloat(prompt('Digite um numero'));
 
-		for (i=0; i<nome.lenght; i++) {
-			nomeVertical += nome.charAt(i) + "\n";
+		if (numero % 1 != 0) {
+			alert('O numero digitado é decimal!');
+		} else {
+			alert('O número digitado é inteiro!');
 		}
-
-		alert(nomeVertical);
 
 	</script>
 </body>

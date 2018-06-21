@@ -7,7 +7,7 @@
 <body>
 	<script type="text/javascript">
 		
-		let dia = prompt("Digite um dia:");
+		/*let dia = prompt("Digite um dia:");
 		let mes = prompt("Digite um mes:");
 		let ano = prompt("Digite um ano:");
 		let mesEX = ""
@@ -40,8 +40,24 @@
 			alert("Mês Inválido!")
 		}
 
-		alert("A data informada é:\n" + dia + " de " + mesEX + " de " + ano);
+		alert("A data informada é:\n" + dia + " de " + mesEX + " de " + ano);*/
 
+
+
+		let meses = [
+			'Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'
+		]
+
+		let data = prompt('Digite a data no formato\ndd/mm/aaaa');
+		let data2 = data.split('/');
+
+		let dia = parseInt(data2[0]);
+		let mes = parseInt(data2[1]);
+		let ano = parseInt(data2[2]);
+
+		let dataExtenso = dia + "de" + meses[mes-1] + 'de' + ano;
+
+		alert(dataExtenso);
 
 
 	</script>
