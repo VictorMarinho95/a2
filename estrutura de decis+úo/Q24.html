@@ -6,22 +6,46 @@
 <body>
 	<script type="text/javascript">
 		
-		let valor_1 = parseFloat(prompt('Informe o primeiro valor:'));
-		let valor_2 = parseFloat(prompt('Informe o segundo valor:'));
-
-		let operacao = prompt('Informe a operação que você deseja realizar:\nA - Par ou Ímpar\nB - Positivo ou Negativo\nC - Inteiro ou Decimal').toLowerCase();
-			if (operacao == 'a') {
-				if (valor_1%2 != 0 && valor_2 )
-
-			} else if (operacao == 'b') {
-
-			} else if (operacao == 'c') {
-
-			} else {
-
-			}
-
-
+	   let valor1 = parseFloat(prompt('Informe o valor 1'));
+	   let valor2 = parseFloat(prompt('Informe o valor 2'));
+        let resultado = 0;
+        
+        let operacao = prompt('Informe qual operação você deseja realizar:\nA - Adição\nB - Subtração\nC - Multiplicação\nD - Divisão');
+        
+        let ehpar = ('PAR');
+        let ehimpar = ('IMPAR');
+        
+        let negativo = ('NEGATIVO');
+        let positivo = ('POSITIVO');
+        
+        let inteiro = ('INTEIRO');
+        let decimal = ('DECIMAL');
+        
+        while (operacao == 'a') {
+            resultado = valor1 + valor2;
+            alert(resultado);
+            break;
+        }
+        
+        while (operacao == 'b') {
+            resultado = valor1 - valor2;
+            alert(resultado);
+            break;
+        }
+        
+        while (operacao == 'c') {
+            resultado = valor1 * valor2;
+            alert(resultado);
+            break;
+        }
+        
+        while (operacao == 'd') {
+            resultado = valor1 / valor2;
+            alert(resultado);
+            break;
+        }
+        
+        
 
 	</script>
 </body>
