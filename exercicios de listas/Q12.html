@@ -7,19 +7,29 @@
 <body>
     <script>
     
-    
-        let idade = new Array(10, 12, 13, 14, 15, 16, 17, 18, 19, 20);
-        let altura = new Array(1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2);
-        let mediaAltura = (altura[0] + altura[1] + altura[2] + altura[3] + altura[4] + altura[5] + altura[6] + altura[7] + altura[8] + altura[9])/10;
-        let lista = new Array();
-        
-        for (i=0;i<idade.length;i++) {
-            if (idade > 13 && altura < mediaAltura) {
-                lista.push(idade[i]);
+        let idades = [14, 17, 12, 10, 14, 16, 19, 15, 13, 11];
+        let alturas = [1.54, 1.87, 1.45, 1.12, 1.61, 1.7, 1.87, 1.67, 1.54, 1.22];
+        let soma = 0;
+        for (let i = 0; i < alturas.length; i++) {
+            soma += alturas[i];
+        }
+
+        let media_alturas = soma / 10;
+
+        let j = 0;
+        let abaixo_media = [];
+        for (let i = 0;i < alturas.length;i++) {
+            if (alturas[i] < media_alturas) {
+                abaixo_media[j] = i;
+                j++;
             }
         }
-        
-        alert(lista.length + ' Alunos possuem altura inferior a media da classe!');
+
+        for (let i = 0; i < j; i++) {
+            if (idades[abaixo_media[i]] > 13) {
+                alert(idades[abaixo_media[i]] + ' - ' + alturas[abaixo_media[i]] + ' - ' + media_alturas);
+            }
+        }
         
         
     </script>

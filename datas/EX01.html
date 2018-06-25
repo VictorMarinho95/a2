@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let data = new Date ();
+		let diasSemana = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sab'];
+		let diaS = diasSemana[data.getDay()];
+		let diaMes = data.getDate();
+		let meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez', ];
+		let mesExtenso = meses[data.getMonth()];
+		let ano = data.getFullYear();
+		let dataExtenso = diaS + ', ' + diaMes + ' de ' + mesExtenso + ' de ' + ano;
+		alert(dataExtenso);
+
+
+	</script>
+</body>
+</html>
