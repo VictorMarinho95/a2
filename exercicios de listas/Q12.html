@@ -13,17 +13,13 @@
         let mediaAltura = (altura[0] + altura[1] + altura[2] + altura[3] + altura[4] + altura[5] + altura[6] + altura[7] + altura[8] + altura[9])/10;
         let lista = new Array();
         
-        for (i=0;i<10;i++) {
-            if (idade[i] > 13) {
-                if (altura < mediaAltura) {
-                    lista.push(idade[i]);
-                     alert(lista.length + ' Alunos possuem altura inferior a media da classe!');
-                }
+        for (i=0;i<idade.length;i++) {
+            if (idade > 13 && altura < mediaAltura) {
+                lista.push(idade[i]);
             }
         }
         
-       
-        
+        alert(lista.length + ' Alunos possuem altura inferior a media da classe!');
         
         
     </script>
