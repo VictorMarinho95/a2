@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function piramide(numero) {
+			let resultado = '';
+			for (i = 1; i <= numero; i++) {
+				for (j = 1; j<= i; j++) {
+					resultado += i + ' ' 
+				}
+				resultado += i + '\n';
+			}
+			return resultado;
+		}
+
+		let texto = piramide(5);
+		alert(texto);
+
+
+
+	</script>
+</body>
+</html>
