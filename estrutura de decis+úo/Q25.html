@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        alert('Responda as perguntas com "SIM" OU "NÃO"');
+        
+        let perguntas = ['Telefonou para a vítima?', 'Esteve no local do crime?', 'Mora perto da vítima?', 'Devia para a vítima?', 'Já trabalhou com a vítima?'];
+        
+        let respostas = [];
+        let sim = 0;
+        let nao = 0;
+        
+        for (i=0;i<perguntas.length;i++) {
+            respostas.push(prompt(perguntas[i]));
+            
+            if (respostas[i] == 'sim') {
+                sim++;
+            } else if (respostas[i] == 'nao') {
+                nao++;
+            }
+        }
+ 
+        if (sim < 2) {
+            alert('Você é inocente!');
+        } else if (sim == 2) {
+            alert('Você é suspeito!');
+        } else if (sim > 2 && sim < 5) {
+            alert('Você é cumplice!');
+        } else if (sim == 5) {
+            alert('Você é o assassino!')
+        }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    
+        let morangoqtd = parseFloat(prompt('Insira a quantidade e morangos em Kg que você deseja comprar:'));
+        let macaqtd = parseFloat(prompt('Insira a quantidade e maçãs em Kg que você deseja comprar:'));
+        
+        let preco_morango = 2.5;
+        let preco_maca = 1.8;
+        
+          if (morangoqtd > 5) {
+           preco_morango = 2.2;
+       } else if (macaqtd > 5) {
+           preco_maca = 1.5;
+       }
+        
+        let valor_morango = preco_morango * morangoqtd;
+        alert('Você comprou ' + valor_morango + ' R$ de morangos');
+        let valor_maca = preco_maca * macaqtd;
+        alert('Você comprou ' + valor_maca + ' R$ de maçãs');
+        
+        let valor_bruto = valor_morango + valor_maca;
+        
+        if (valor_bruto > 25) {
+            valor_bruto -= valor_bruto * 0.1;
+            alert(valor_bruto);
+        } else {
+            alert(valor_bruto);
+        }
+        
+        
+        
+     
+        
+        
+        
+        
+    
+    </script>
+</body>
+</html>

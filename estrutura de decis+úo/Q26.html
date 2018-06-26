@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        let litros = parseFloat(prompt('Informe quantos litros você deseja:'));
+        let combustivel = prompt('Informe com qual combustível você quer abastecer, use "G" para gasolina e "A" para alcool:').toLowerCase();
+        let preco = 0;
+        let valor = 0;
+        
+        if (combustivel == 'g') {
+            preco = 2.5;
+        } else if (combustivel == 'a') {
+            preco = 1.9;
+        } else {
+            alert('Combustível inválido!')
+        }
+        
+        valor = litros * preco;
+        
+        if (combustivel == 'g' && litros <= 20) {
+            valor -= (valor * 0.04);
+        } else if (combustivel == 'g' && litros > 20) {
+            valor -= (valor * 0.06);
+        }
+    
+        if (combustivel == 'a' && litros <= 20) {
+            valor -= (valor * 0.03);
+        } else if (combustivel == 'a' && litros > 20) {
+            valor -= (combustivel *0.05);
+        }
+        
+        
+        alert(valor + ' R$')
+        
+        
+        
+    
+    
+    </script>
+</body>
+</html>

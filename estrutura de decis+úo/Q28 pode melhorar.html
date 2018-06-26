@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        let carne = prompt('Qual o tipo de carne você deseja:\nA - Filé Dúplo\nB - Alcatra\nC - Picanha').toLowerCase();
+        let qtd_carne = parseFloat(prompt('Indique a quantidade de carne em Kg'));
+        let preco_carne = 0;
+        let tipo_carne = '';
+        
+        if (carne == 'a') {
+            preco_carne = 5.8;
+            tipo_carne = 'Filé Dúplo';
+        } else if (carne =='b') {
+            preco_carne = 6.8;
+            tipo_carne = 'Alcatra';
+        } else if (carne == 'c') {
+            preco_carne = 7.8;
+            tipo_carne = 'Picanha';
+        }
+        
+        if (carne == 'a' && qtd_carne > 5) {
+            preco_carne = 4.9;
+        } else if (carne == 'b' && qtd_carne > 5) {
+            preco_carne = 5.9;
+        } else if (carne == 'c' && qtd_carne > 5) {
+            preco_carne = 6.9;
+        }
+        
+        let valor_brt = preco_carne * qtd_carne;
+        let cartao = prompt('Você gostaria de pagar com o cartão fidelidade TABAJARA?\nResponda com "s" para sim e "n" para não');
+        let valor_desconto =valor_brt * 0.05;
+        if (cartao == 's') {
+            valor_brt -= valor_desconto 
+        } else if (cartao == 'n') {
+            valor_fn == valor_brt;
+        } else {
+            alert('Resposta inválida!');
+        }
+        let valor_fn = valor_brt - valor_desconto;
+        alert('Cupom Fiscal\nProduto: ' + tipo_carne + '\nQuantidade: ' + qtd_carne + '\nPreço: ' + valor_brt + ' R$\nDesconto: ' + valor_desconto + 'R$\nValor Final: ' + valor_fn + ' R$');
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    </script>
+</body>
+</html>
