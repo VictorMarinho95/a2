@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        
+            let numero = parseFloat(prompt('Insira um valor:'));
+            
+                if (numero < 0) {
+                    alert('Valor deve ser maior ou igual a zero!')
+                } else if (numero == 0 || numero == 1) {
+                    alert('Resultado: ' + 1);
+                } else {
+                    let acumula = 1;
+                    for (i=numero;i>1;i--) {
+                        acumula = acumula * i;
+                    }
+                    alert('Resultado: ' + acumula);
+                
+            }
+            
+        
+        
+        
+        </script>
+    </body>
+    </html>
+</body>
+</html>

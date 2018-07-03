@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        let valores = [];
+        for (i=0;i<3;i++) {
+            valores.push(parseFloat(prompt('Insira um valor:')));
+            
+        }
+        let maior = Math.max.apply(null, valores);
+        let menor = Math.min.apply(null, valores);
+        
+        alert('Os valores são: ' + valores.join(', ') + '\nO maior valor é: ' + maior + '\nO menor valor é: ' + menor);
+    
+    </script>
+    
+    
+</body>
+</html>

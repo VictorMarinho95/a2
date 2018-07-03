@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        let numeros = [];
+        let pares = [];
+        let impares = [];
+        
+        for (i=0;i<10;i++) {
+            numeros.push(parseInt(prompt('Informe um número inteiro:')));
+            if (numeros[i]%2 == 0) {
+                pares.push(numeros[i]);
+            } else if (numeros[i]%2 != 0) {
+                impares.push(numeros[i]);
+            }
+        }
+        
+        alert(numeros + '\n' + pares + '\n' + impares);
+        
+    
+    
+    </script>
+</body>
+</html>
