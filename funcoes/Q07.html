@@ -7,16 +7,20 @@
 <body>
     <script>
     
-        let x = parseFloat(prompt('Informe o valor da prestação:'));
-        let y = parseFloat(prompt('Informe o número de dias atrasados:'));
-        function valorPagamento(valorPrestacao, diasAtrasados) {
-            if (diasAtrasados == 0) {
-                return valorPrestacao;
-            } else {
-                return valorPrestacao * 0.03 + valorPrestacao;
+        let vp = 0;
+        let vPrest = parseFloat(prompt('Informe o valor da prestação:'));
+        let dAtraso = parseFloat(prompt('Informe o número de dias atrasados:'));
+        function valorPagamento () {
+            if (dAtraso == 0) {
+                return vPrest;
+            } else if (dAtraso > 0) {
+                vp = (vPrest * 0.001) + (vPrest * 0.03) + vPrest;
+                return vp;
             }
         }
-        alert('O valor a ser pago é ' + valorPagamento(x, y) + 'R$');
+        valorPagamento();
+        alert(vp);
+        
     
     
     </script>
