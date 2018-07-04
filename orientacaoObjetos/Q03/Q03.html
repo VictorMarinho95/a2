@@ -7,14 +7,19 @@
     <script src="Retangulo.js"></script>
 	<script type="text/javascript">
 		
-		let retangulo = new Retangulo();
+		let comprimento = parseFloat(prompt('Informe o comprimento:'));
+		let largura = parseFloat(prompt('Informe a largura:'));
 
-		retangulo.setBase(parseFloat(prompt('Insira o valor do lado "A":')));
-		retangulo.setAltura(parseFloat(prompt('Insira o valor do lado "B":')));
+		let larguraPiso = parseFloat(prompt('largura do piso:'));
+		let comprimentoPiso = parseFloat(prompt('comprimento do piso:'));
 
-		alert('A área do retangulo é igual a ' + retangulo.getArea() + '\nO perímetro do retângulo é igual a ' + retangulo.getPerimetro());
-		
+		let terreno = new Retangulo(comprimento, largura);
 
+		let piso = new Retangulo(larguraPiso, comprimentoPiso);
+
+		alert(
+			'Area do terreno: ' + terreno.obterArea() + '\n' + 'Area do piso ' + piso.obterArea() + '\n' + 'Quantidade de pisos ' + (terreno.obterArea() / piso.obterArea())
+			);
 
 	</script>
 </body>

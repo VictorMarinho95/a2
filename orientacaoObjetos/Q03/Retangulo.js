@@ -1,23 +1,31 @@
 class Retangulo {
 
-	constructor(_base, _altura) {
+	constructor(base, altura) {
 		this._base = base;
 		this._altura = altura;
 	}
 
-	setBase(base) {
+	definirBase(base) {
 		this._base = base;
 	}
 
-	setAltura(altura) {
+	definirAltura(altura) {
 		this._altura = altura;
 	}
 
-	getArea() {
-		return  this._base * this._altura;
+	obterBase() {
+		return this._base;
 	}
-    
-    getPerimetro() {
-        return getArea() * 2;
-    }
+
+	obterAltura() {
+		return this._altura;
+	}
+
+	obterArea() {
+		return this._base * this._altura;
+	}
+
+	obterPerimetro() {
+		return (this._base * 2) + (this._altura * 2);
+	}
 }

@@ -1,17 +1,18 @@
-  class Quadrado {
-    constructor(_lado) {
-      this._lado = lado;
+class Quadrado {
+
+    constructor(lado) {
+        this._lado = lado;
     }
-      
-    setLado(lado) {
+
+    mudarLado(lado) {
         return this._lado = lado;
-    } 
+    }
 
-    getArea() {
-        return this.calculaArea();  
-    }  
+    retornarLado() {
+        return this._lado;
+    }
 
-    calculaArea() {  
-        return this._lado * this._lado;  
+    calcularArea() {
+        return this._lado * this._lado;
     }
 }

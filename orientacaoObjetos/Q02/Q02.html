@@ -8,12 +8,14 @@
     <script src = "Quadrado.js"></script>
     <script>
     
-     
+        let lado = parseFloat(prompt('Insira o valor do lado:'));
 
-        let quadrado = new Quadrado();
-        quadrado.setLado(parseFloat(prompt('Insira um valor:')));
-        calculaArea();
-        alert(qudrado.getArea());
+
+        let quadrado = new Quadrado(lado);
+
+        alert('O lado do quadrado é ' + quadrado.retornarLado() + 
+        '\nA área do quadrado é ' + quadrado.calcularArea());
+
         
         
         

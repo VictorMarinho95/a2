@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script src="ContaCorrente.js"></script>
+	<script type="text/javascript">
+		
+		let tutular = prompt('Informe o titular da conta');
+		let numero = prompt('Informe o numero da conta');
+
+		let conta_corrente = new ContaCorrente(numero, titular);
+
+		let deposito = parseFloat(prompt('deposito'));
+
+		if (conta_corrente.depositar(deposito)) {
+			alert('Deposito efetuado');
+		} else {
+			alert('Deposito não pode seer negativo');
+		}
+
+		alert(conta_corrente.toString());
+
+	</script>
+</body>
+</html>
