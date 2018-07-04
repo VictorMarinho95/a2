@@ -4,15 +4,16 @@
 	<title></title>
 </head>
 <body>
+    <script src="Retangulo.js"></script>
 	<script type="text/javascript">
 		
-		let retangulo = new Retangulo(5, 10);
+		let retangulo = new Retangulo();
 
-		retangulo.mudarBase(20);
-		retangulo.mudarAltura(25);
+		retangulo.setBase(parseFloat(prompt('Insira o valor do lado "A":')));
+		retangulo.setAltura(parseFloat(prompt('Insira o valor do lado "B":')));
 
-		console.log(retangulo.obterArea());
-		console.log(retangulo.obterPerimetro());
+		alert('A área do retangulo é igual a ' + retangulo.getArea() + '\nO perímetro do retângulo é igual a ' + retangulo.getPerimetro());
+		
 
 
 	</script>
