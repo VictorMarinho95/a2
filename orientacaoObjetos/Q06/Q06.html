@@ -10,11 +10,17 @@
 		let numero_canal = parseInt(prompt('Insira o número do canal:'));
 		let volume = parseInt(prompt('Insira o valor do volume:'));
 
-		let televisao = new Tv();
+		let televisao = new Tv(volume, numero_canal);
+        
+        if(televisao.alterarCanal(numero_canal) == true && televisao.alterarVolume(volume) == true) {
+           alert('Canal: ' + numero_canal + '\nVolume: ' + volume);
+           } else {
+               alert('Valor inválido!');
+           }
+        
+        
 
-		televisao.alterarVolume();
-		alert(televisao.alterarVolume);
-		}
+		
 
 
 

@@ -1,24 +1,24 @@
 class Tv {
-	constructor(canal, volume) {
-		this._canal = canal;
-		this._volume = volume;
-	}
-
-	alterarVolume(valor) {
-		if (this._volume >= 0 && this._volume <= 100) {
-			this._volume = valor;
-			return true;
-		} else {
-			return false;
-		}
-	}
-	
-	alterarCanal(numero_canal) {
-		if (this._canal >=1 && this._canal <= 150) {
-			this._canal = numero_canal;
-			return true;
-		} else {
-			return false;
-		}
-	}
+    constructor(volume, canal) {
+        this._volume = volume;
+        this._canal = canal;
+    }
+    
+    alterarVolume(valor) {
+        if(valor >= 0 && valor <= 100) {
+            this._volume = valor;
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    alterarCanal(numero) {
+        if(numero > 0 && numero <= 150) {
+            this.canal = numero;
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
