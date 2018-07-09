@@ -8,13 +8,45 @@
     <script src="Bicho_Virtual.js"></script>
     <script>
     
-        let name = prompt('Insira o nome do seu Tamagushi');
+        //let name = prompt('Insira o nome do seu Tamagushi');
         let hungry = parseInt(prompt('Insira o nível de fome:\n(apenas valores inteiros entre 0 e 10):'));
         let health = parseInt(prompt('Insira o nível de saúde:\n(apenas valores inteiros entre 0 e 10):'));
-        let old = parseInt(prompt('Insira a idade do seu tamagushi:\n(apenas valores inteiros entre 0 e 100):'));
-        let humor = [bravo, calmo];
+        //let old = parseInt(prompt('Insira a idade do seu tamagushi:\n(apenas valores inteiros entre 0 e 100):'));
+        let humor = '';
         
-        let tamagushi = new Tamagushi(name, hungry, health, old);
+        let tamagushi = new Tamagushi(/*name,*/ hungry, health/*, old*/);
+        
+        if (tamagushi.retornarFome(hungry) == 'Fome') {
+            if (tamagushi.retornarSaude(health) == 'Doente') {
+             let humor = 'Bravo';
+            }
+            } else if (tamagushi.retornarFome(hungry) == 'Cheio') {
+                if (tamagushi.retornarSaude(health) == 'Doente') {
+                let humor = 'Normal';
+                }
+            } else if (tamagushi.retornarFome(hungry) == 'Fome') {
+                if (tamagushi.retornarSaude(health) == 'Saudável') {
+                let humor = 'Normal'
+                    }
+            } else {
+                let humor = 'Feliz';
+            }
+        
+        alert('humor: ' + humor);
+        
+        
+        
+        /*
+         if (tamagushi.retornarFome(hungry) == 'Fome' && tamagushi.retornarSaude(health) == 'Doente') {
+             let humor = 'Bravo';
+            } else if (tamagushi.retornarFome(hungry) == 'Cheio' && tamagushi.retornarSaude(health) == 'Doente') {
+                let humor = 'Normal';
+            } else if (tamagushi.retornarFome(hungry) == 'Fome' && tamagushi.retornarSaude(health) == 'Saudável') {
+                let humor = 'Normal'
+            } else {
+                let humor = 'Feliz';
+            }
+        alert('nome: ' + tamagushi.alterarNome(name) + '\nalimentação: ' + tamagushi.retornarFome(hungry) + '\nsaude: ' + tamagushi.retornarSaude(health) + '\nidade: ' + tamagushi.retornarIdade(old) + '\nhumor: ' + humor);*/
         
         
         

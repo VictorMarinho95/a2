@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Macaco.js"></script>
+    <script>
+
+        let priMacaco = 'Primeiro macaco';
+        let segMacaco = 'Segundo macaco';
+        
+        let priEstomagoMacaco = [];
+        let segEstomagoMacaco = [];
+        
+        let alimento1mac1 = prompt('Insira um alimento para o macaco 1');
+        let alimento1mac2 = prompt('Insira um alimento para o macaco 2'); 
+         let alimento2mac1 = prompt('Insira um alimento para o macaco 1');
+        let alimento2mac2 = prompt('Insira um alimento para o macaco 2');   
+         let alimento3mac1 = prompt('Insira um alimento para o macaco 1');
+        let alimento3mac2 = prompt('Insira um alimento para o macaco 2');   
+        
+        
+        let macaco1 = new Macaco(priMacaco, priEstomagoMacaco);
+        let macaco2 = new Macaco(segMacaco, segEstomagoMacaco);
+        //ALIMENTAR
+        macaco1.comer(alimento1mac1); alert(macaco1.verBucho(priEstomagoMacaco));
+        
+        macaco2.comer(alimento1mac2); alert(macaco2.verBucho(segEstomagoMacaco));
+        
+         macaco1.comer(alimento2mac1); alert(macaco1.verBucho(priEstomagoMacaco));
+        
+        macaco2.comer(alimento2mac2); alert(macaco2.verBucho(segEstomagoMacaco));
+       
+         macaco1.comer(alimento3mac1); alert(macaco1.verBucho(priEstomagoMacaco));
+        
+        macaco2.comer(alimento3mac2); alert(macaco2.verBucho(segEstomagoMacaco));
+        //DIGERIR
+        macaco1.digerir(alimento1mac1); alert(macaco1.verBucho(priEstomagoMacaco));
+        
+        macaco2.digerir(alimento1mac2); alert(macaco2.verBucho(segEstomagoMacaco));
+        
+         macaco1.digerir(alimento2mac1); alert(macaco1.verBucho(priEstomagoMacaco));
+        
+        macaco2.digerir(alimento2mac2); alert(macaco2.verBucho(segEstomagoMacaco));
+        
+         macaco1.digerir(alimento3mac1); alert(macaco1.verBucho(priEstomagoMacaco));
+        
+        macaco2.digerir(alimento3mac2); alert(macaco2.verBucho(segEstomagoMacaco));
+        
+       
+    </script>
+</body>
+</html>
