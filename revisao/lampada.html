@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content ="width=device-width, initial-scale=1">
+	<style>
+	div {
+		text-align: center;
+	}
+	button {
+		width: 90px;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<?php
+			$lampada = 'desligada.jpg';
+				if (!empty($_POST['ligar']) && $_POST['ligar'] == 'ligada') {
+				$lampada = 'ligada.jpg'
+			}
+			?>
+	<img src="<?php echo $lampada; ?>"
+	<form action ="" method ="post">
+		<button type="submit">Ligar</button>
+		<button type ="submit">Desligar</button>
+	
+	</form>
+	</div>	
+
+
+
+</body>
+</html>
